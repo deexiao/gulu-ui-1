@@ -2,7 +2,7 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 18:07:25
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 21:27:51
+ * @LastEditTime: 2022-08-11 21:34:56
  * @Description: 
 -->
 <template>
@@ -46,7 +46,15 @@ const toggleMenu = () => {
       margin: 0 1em;
     }
   }
-  > .toggleMenu {
+  > .toggleAside {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: red;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   @media (max-width: 600px) {
     > .menu {
