@@ -2,7 +2,7 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 16:05:30
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 19:54:19
+ * @LastEditTime: 2022-08-11 19:56:29
  * @Description: 
 -->
 <template>
@@ -41,4 +41,21 @@ export default {
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+aside {
+  background: lightblue;
+  width: 150px;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  > h2 {
+    margin-bottom: 4px;
+  }
+  > ol {
+    > li {
+      padding: 4px 0;
+    }
+  }
+}
+</style>
