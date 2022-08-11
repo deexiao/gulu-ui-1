@@ -2,7 +2,7 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 18:07:25
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 21:14:10
+ * @LastEditTime: 2022-08-11 21:27:51
  * @Description: 
 -->
 <template>
@@ -12,6 +12,7 @@
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
+    <span class="toggleAside"></span>
   </div>
 </template>
 
@@ -31,6 +32,8 @@ const toggleMenu = () => {
   padding: 16px;
   position: relative;
   z-index: 10;
+  justify-content: center;
+  align-items: center;
   > .logo {
     max-width: 6em;
     margin-right: auto;
@@ -41,6 +44,16 @@ const toggleMenu = () => {
     flex-wrap: nowrap;
     > li {
       margin: 0 1em;
+    }
+  }
+  > .toggleMenu {
+  }
+  @media (max-width: 600px) {
+    > .menu {
+      display: none;
+    }
+    > .logo {
+      margin: 0 auto;
     }
   }
 }
