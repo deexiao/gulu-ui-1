@@ -2,7 +2,7 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 16:05:30
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 21:46:18
+ * @LastEditTime: 2022-08-11 22:10:58
  * @Description: 
 -->
 <template>
@@ -26,6 +26,9 @@
           </li>
         </ol>
       </aside>
+      <main>
+        <router-view />
+      </main>
     </div>
   </div>
 </template>
@@ -50,7 +53,7 @@ aside {
       padding: 4px 0;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     position: fixed;
     top: 0;
     left: 0;
