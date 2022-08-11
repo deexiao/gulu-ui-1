@@ -2,11 +2,13 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 23:31:06
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 23:58:32
+ * @LastEditTime: 2022-08-12 00:00:57
  * @Description: 
 -->
 <template>
-  <button @click="toggle" :class="{ checked }"><span></span></button>
+  <button @click="toggle" :class="{ checked }">
+    <span></span>
+  </button>
 </template>
 
 <script setup lang="ts">
@@ -36,11 +38,15 @@ span {
   width: $h2;
   background: white;
   border-radius: $h2 / 2;
+  transition: left 250ms;
 }
 button.checked {
   background: blue;
 }
 button.checked > span {
   left: calc(100% - #{$h2} - 2px);
+}
+button:focus {
+  outline: none;
 }
 </style>
