@@ -2,14 +2,14 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 16:05:30
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 20:03:20
+ * @LastEditTime: 2022-08-11 21:13:32
  * @Description: 
 -->
 <template>
   <div>
     <Topnav />
     <div class="content">
-      <aside>
+      <aside v-if="menuVisible">
         <h2>组件列表</h2>
         <ol>
           <li>
@@ -30,15 +30,11 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import Topnav from '../components/Topnav.vue'
-export default {
-  components: { Topnav },
-}
-</script>
+import { inject, Ref } from 'vue'
 
-<script>
-export default {}
+const menuVisible = inject<Ref<boolean>>('menuVisible')
 </script>
 
 <style lang="scss" scoped>

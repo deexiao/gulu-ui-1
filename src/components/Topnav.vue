@@ -2,18 +2,27 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 18:07:25
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 20:02:59
+ * @LastEditTime: 2022-08-11 21:14:10
  * @Description: 
 -->
 <template>
   <div class="top-nav">
-    <div class="logo">LOGO</div>
+    <div class="logo" @click="toggleMenu">LOGO</div>
     <ul class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
   </div>
 </template>
+
+<script setup lang="ts">
+import { inject, Ref } from 'vue'
+
+const menuVisible: any = inject<Ref<boolean>>('menuVisible')
+const toggleMenu = () => {
+  menuVisible.value = !menuVisible.value
+}
+</script>
 
 <style lang="scss" scoped>
 .top-nav {
