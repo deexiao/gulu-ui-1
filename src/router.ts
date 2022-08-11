@@ -2,13 +2,17 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 22:04:01
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 22:20:41
+ * @LastEditTime: 2022-08-11 22:35:04
  * @Description: 
  */
 import { createWebHashHistory, createRouter } from 'vue-router'
-import SwitchDemo from './components/SwitchDemo.vue'
 import Doc from './views/Doc.vue'
 import Home from './views/Home.vue'
+import SwitchDemo from './components/SwitchDemo.vue'
+import ButtonDemo from "./components/ButtonDemo.vue";
+import DialogDemo from "./components/DialogDemo.vue";
+import TabsDemo from "./components/TabsDemo.vue";
+import DocDemo from "./components/DocDemo.vue";
 
 const history = createWebHashHistory()
 export const router = createRouter({
@@ -19,9 +23,11 @@ export const router = createRouter({
     },
     {
       path: '/doc', component: Doc, children: [
-        {
-          path: 'Switch', component: SwitchDemo
-        }
+        {path: '', component: DocDemo},
+        {path: 'switch', component: SwitchDemo},
+        {path: 'button', component: ButtonDemo},
+        {path: 'dialog', component: DialogDemo},
+        {path: 'tabs', component: TabsDemo}
       ],
     }
   ]
