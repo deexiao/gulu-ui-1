@@ -2,21 +2,20 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 12:25:31
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 12:57:52
+ * @LastEditTime: 2022-08-11 13:36:40
  * @Description: 
 -->
 <template>
-  <div>hi</div>
-  <DeeXiao />
+  <div>导航栏</div>
+  <router-link to="/">DeeXiao</router-link> |
+  <router-link to="/xxx">DeeXiao2</router-link>
+  <hr />
+  <router-view />
 </template>
 
 <script>
-import DeeXiao from './components/DeeXiao.vue'
-
 export default {
   name: 'App',
-  components: {
-    DeeXiao,
-  },
+  components: {},
 }
 </script>
