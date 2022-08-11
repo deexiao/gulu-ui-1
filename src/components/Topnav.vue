@@ -2,17 +2,17 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 18:07:25
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 21:34:56
+ * @LastEditTime: 2022-08-11 21:49:51
  * @Description: 
 -->
 <template>
   <div class="top-nav">
-    <div class="logo" @click="toggleMenu">LOGO</div>
+    <div class="logo">LOGO</div>
     <ul class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
-    <span class="toggleAside"></span>
+    <span class="toggleAside" @click="toggleMenu"></span>
   </div>
 </template>
 
@@ -47,7 +47,6 @@ const toggleMenu = () => {
     }
   }
   > .toggleAside {
-    display: inline-block;
     width: 24px;
     height: 24px;
     background: red;
@@ -55,6 +54,7 @@ const toggleMenu = () => {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    display: none;
   }
   @media (max-width: 600px) {
     > .menu {
@@ -62,6 +62,9 @@ const toggleMenu = () => {
     }
     > .logo {
       margin: 0 auto;
+    }
+    > .toggleAside {
+      display: inline-block;
     }
   }
 }
