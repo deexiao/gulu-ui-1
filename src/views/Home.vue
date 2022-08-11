@@ -2,7 +2,7 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 16:05:38
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 18:22:02
+ * @LastEditTime: 2022-08-11 18:26:17
  * @Description: 
 -->
 <template>
@@ -12,8 +12,8 @@
       <h1>轱辘UI</h1>
       <h2>一个厉害的 UI 框架</h2>
       <p class="actions">
-        <a>GitHub</a>
-        <a>开始</a>
+        <a href="https://github.com/deexiao">GitHub</a>
+        <router-link to="/doc">开始</router-link>
       </p>
     </div>
   </div>
