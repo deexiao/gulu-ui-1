@@ -2,7 +2,7 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 23:31:06
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 23:37:42
+ * @LastEditTime: 2022-08-11 23:46:15
  * @Description: 
 -->
 <template>
@@ -30,5 +30,8 @@ span {
   width: $h2;
   background: white;
   border-radius: $h2 / 2;
+}
+button:hover > span {
+  left: calc(100% - #{$h2} - 2px);
 }
 </style>
