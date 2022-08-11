@@ -2,7 +2,7 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 16:05:30
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 19:56:29
+ * @LastEditTime: 2022-08-11 20:03:20
  * @Description: 
 -->
 <template>
@@ -49,6 +49,7 @@ aside {
   position: fixed;
   top: 0;
   left: 0;
+  padding-top: 70px;
   > h2 {
     margin-bottom: 4px;
   }

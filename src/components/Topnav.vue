@@ -2,7 +2,7 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 18:07:25
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 18:09:29
+ * @LastEditTime: 2022-08-11 20:02:59
  * @Description: 
 -->
 <template>
@@ -20,6 +20,8 @@
   background: pink;
   display: flex;
   padding: 16px;
+  position: relative;
+  z-index: 10;
   > .logo {
     max-width: 6em;
     margin-right: auto;
