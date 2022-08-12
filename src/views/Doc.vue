@@ -2,7 +2,7 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 16:05:30
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-11 22:24:28
+ * @LastEditTime: 2022-08-13 00:03:13
  * @Description: 
 -->
 <template>
@@ -65,7 +65,7 @@ const menuVisible = inject<Ref<boolean>>('menuVisible')
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: lightgreen;
+    background: white;
   }
 }
 aside {
