@@ -2,20 +2,20 @@
  * @Author: Dee.Xiao
  * @Date: 2022-08-11 23:31:06
  * @LastEditors: Dee.Xiao
- * @LastEditTime: 2022-08-12 00:00:57
+ * @LastEditTime: 2022-08-12 01:00:27
  * @Description: 
 -->
 <template>
-  <button @click="toggle" :class="{ checked }">
+  <button @click="toggle" :class="{ checked: value }">
     <span></span>
   </button>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const checked = ref(false)
+const props = defineProps(['value'])
+const emit = defineEmits(['update:value'])
 const toggle = () => {
-  checked.value = !checked.value
+  emit('update:value', !props.value)
 }
 </script>
 
